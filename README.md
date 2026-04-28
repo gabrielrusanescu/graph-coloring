@@ -8,32 +8,6 @@ Welsh-Powell Logic: Sorts nodes by their degree in descending order before color
 
 Validation: Uses assert statements to verify correctness against known test cases.
 
-Input File Format
-The program reads from text files (e.g., input1.txt). The structure should be:
-
-An integer representing the total number of nodes (n).
-
-For each node: the node ID, its degree, and the IDs of its neighbors.
-
-Example:
-
-Plaintext
-3
-1 2 2 3
-2 1 1
-3 1 1
-Technical Details
-Data Structures
-The graph is represented using a custom Node structure:
-
-id: Unique identifier for the node.
-
-degree: Number of edges connected to the node.
-
-color: The assigned color index (initializes at -1).
-
-neighbors: An array of integers storing neighbor IDs.
-
 Algorithm Steps
 Allocation: Load the graph from the file and allocate memory.
 
